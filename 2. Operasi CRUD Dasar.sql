@@ -1,3 +1,4 @@
+--CREATE--
 INSERT INTO nasabah (nama_nasabah, alamat, no_telepon) VALUES
 ('Loki Friggason', 'Madiun', '083117678815'),
 ('Thor Odinson', 'Magelang', '085235685077'),
@@ -13,13 +14,16 @@ INSERT INTO setoran (id_setoran, id_nasabah, id_harga, berat, total, tanggal_set
 (2, 1, 2, 5.00, 10000.00, '2026-10-03'),
 (3, 2, 3, 3.20,  8000.00, '2026-10-05');
 
+--READ--
 SELECT * FROM nasabah;
 
+--UPDATE--
 UPDATE setoran
 SET berat = 6.00,
     total = 12000.00
 WHERE id_setoran = 2;
 
+--DELETE-
 DELETE FROM setoran
 WHERE id_setoran = 8;
 
